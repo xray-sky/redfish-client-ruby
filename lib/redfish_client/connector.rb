@@ -216,7 +216,7 @@ module RedfishClient
                                       "UserName" => @username,
                                       "Password" => @password)
       r = @connection.request(params)
-      raise_invalid_auth_error unless r.status == 201
+      raise_invalid_auth_error unless [200, 201].include?(r.status)
 
       token = r.data[:headers][TOKEN_AUTH_HEADER]
       add_headers(TOKEN_AUTH_HEADER => token)
