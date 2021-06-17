@@ -95,4 +95,4 @@ create new release, publishing it on https://rubygems.org.
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at
-https://github.com/xlab-si/redfish_client.
+https://github.com/xray-sky/redfish_client.
